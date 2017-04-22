@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates");
+/* line 3, ../sass/style.scss */
+html {
+  height: 200vh;
+  background: radial-gradient(ellipse at center, #dbb800 0%, #688acc 50%);
+}
+
+/* line 8, ../sass/style.scss */
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* line 13, ../sass/style.scss */
+h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* line 19, ../sass/style.scss */
+.sun-flwr {
+  width: 50vmin;
+  height: 50vmin;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+/* line 27, ../sass/style.scss */
+.sun-flwr__leaf--left, .sun-flwr__leaf--right {
+  height: 20%;
+  border-radius: 0% 50% 0% 50%;
+  position: absolute;
+  background: #6f8e4b;
+  top: 70%;
+  left: 45%;
+  -webkit-transform: translate(-100%, -50%) rotate(-20deg);
+          transform: translate(-100%, -50%) rotate(-20deg);
+  -webkit-animation: sun-flwr__leaf forwards 2s 1.5s;
+          animation: sun-flwr__leaf forwards 2s 1.5s;
+}
+/* line 39, ../sass/style.scss */
+.sun-flwr__leaf--right {
+  top: 80%;
+  left: 55%;
+  -webkit-transform: translate(0%, -50%) rotate(-70deg);
+          transform: translate(0%, -50%) rotate(-70deg);
+}
+@-webkit-keyframes sun-flwr__leaf {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+@keyframes sun-flwr__leaf {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+/* line 55, ../sass/style.scss */
+.sun-flwr__stem {
+  position: absolute;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  width: 5%;
+  height: 60%;
+  background: #556D39;
+  left: 50%;
+  bottom: 0%;
+  -webkit-animation: sun-flwr__stem forwards 2s;
+          animation: sun-flwr__stem forwards 2s;
+}
+@-webkit-keyframes sun-flwr__stem {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 60%;
+  }
+}
+@keyframes sun-flwr__stem {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 60%;
+  }
+}
+/* line 75, ../sass/style.scss */
+.sun-flwr__center {
+  border-radius: 50%;
+  background-color: #3C1F03;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  z-index: 2;
+  -webkit-animation: sun-flwr__center 2s 1.5s forwards;
+          animation: sun-flwr__center 2s 1.5s forwards;
+}
+@-webkit-keyframes sun-flwr__center {
+  0% {
+    width: 0%;
+    height: 0%;
+  }
+  100% {
+    width: 25%;
+    height: 25%;
+  }
+}
+@keyframes sun-flwr__center {
+  0% {
+    width: 0%;
+    height: 0%;
+  }
+  100% {
+    width: 25%;
+    height: 25%;
+  }
+}
+/* line 99, ../sass/style.scss */
+.sun-flwr__pedal--1, .sun-flwr__pedal--2, .sun-flwr__pedal--3, .sun-flwr__pedal--4, .sun-flwr__pedal--5, .sun-flwr__pedal--6, .sun-flwr__pedal--7, .sun-flwr__pedal--8, .sun-flwr__pedal--9, .sun-flwr__pedal--10, .sun-flwr__pedal--11, .sun-flwr__pedal--12 {
+  border-radius: 50%;
+  background: #F2FE00;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-animation: grow-pedal-back 2s 2.5s forwards;
+          animation: grow-pedal-back 2s 2.5s forwards;
+}
+/* line 112, ../sass/style.scss */
+.sun-flwr__pedal--2 {
+  -webkit-transform: translate(-50%, -50%) rotate(30deg);
+          transform: translate(-50%, -50%) rotate(30deg);
+}
+/* line 117, ../sass/style.scss */
+.sun-flwr__pedal--3 {
+  -webkit-transform: translate(-50%, -50%) rotate(60deg);
+          transform: translate(-50%, -50%) rotate(60deg);
+}
+/* line 121, ../sass/style.scss */
+.sun-flwr__pedal--4 {
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+}
+/* line 125, ../sass/style.scss */
+.sun-flwr__pedal--5 {
+  -webkit-transform: translate(-50%, -50%) rotate(120deg);
+          transform: translate(-50%, -50%) rotate(120deg);
+}
+/* line 129, ../sass/style.scss */
+.sun-flwr__pedal--6 {
+  -webkit-transform: translate(-50%, -50%) rotate(150deg);
+          transform: translate(-50%, -50%) rotate(150deg);
+}
+@-webkit-keyframes grow-pedal-back {
+  0% {
+    width: 0%;
+    height: 0%;
+    border: 0px solid black;
+  }
+  100% {
+    width: 15%;
+    height: 45%;
+    border: 2px solid black;
+  }
+}
+@keyframes grow-pedal-back {
+  0% {
+    width: 0%;
+    height: 0%;
+    border: 0px solid black;
+  }
+  100% {
+    width: 15%;
+    height: 45%;
+    border: 2px solid black;
+  }
+}
+/* line 147, ../sass/style.scss */
+.sun-flwr__pedal--7, .sun-flwr__pedal--8, .sun-flwr__pedal--9, .sun-flwr__pedal--10, .sun-flwr__pedal--11, .sun-flwr__pedal--12 {
+  border-radius: 20% 50% 20% 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(15deg);
+          transform: translate(-50%, -50%) rotate(15deg);
+  -webkit-animation: grow-pedal-front 2s 3.5s forwards;
+          animation: grow-pedal-front 2s 3.5s forwards;
+}
+/* line 155, ../sass/style.scss */
+.sun-flwr__pedal--8 {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+/* line 159, ../sass/style.scss */
+.sun-flwr__pedal--9 {
+  -webkit-transform: translate(-50%, -50%) rotate(75deg);
+          transform: translate(-50%, -50%) rotate(75deg);
+}
+/* line 163, ../sass/style.scss */
+.sun-flwr__pedal--10 {
+  -webkit-transform: translate(-50%, -50%) rotate(105deg);
+          transform: translate(-50%, -50%) rotate(105deg);
+}
+/* line 167, ../sass/style.scss */
+.sun-flwr__pedal--11 {
+  -webkit-transform: translate(-50%, -50%) rotate(135deg);
+          transform: translate(-50%, -50%) rotate(135deg);
+}
+/* line 171, ../sass/style.scss */
+.sun-flwr__pedal--12 {
+  -webkit-transform: translate(-50%, -50%) rotate(165deg);
+          transform: translate(-50%, -50%) rotate(165deg);
+}
+@-webkit-keyframes grow-pedal-front {
+  0% {
+    height: 0%;
+    width: 0%;
+    border: 0px solid black;
+  }
+  100% {
+    height: 35%;
+    width: 10%;
+    border: 2px solid black;
+  }
+}
+@keyframes grow-pedal-front {
+  0% {
+    height: 0%;
+    width: 0%;
+    border: 0px solid black;
+  }
+  100% {
+    height: 35%;
+    width: 10%;
+    border: 2px solid black;
+  }
+}
