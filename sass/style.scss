@@ -8,17 +8,21 @@ html {
 body {
   height: 100vh;
   overflow: hidden;
+  border-bottom: 10vh #339545 solid;
+  box-sizing: border-box;
+  position: relative;
 }
 
 h1 {
   text-align: center;
   color: white;
   font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 40px;
 }
 
 .sun-flwr {
-  width: 50vmin;
-  height: 50vmin;
+  width: 80vmin;
+  height: 80vmin;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -46,9 +50,11 @@ h1 {
   @keyframes sun-flwr__leaf {
     0% {
       width: 0%;
+      border: 0px solid black;
     }
     100% {
       width: 20%;
+      border: 2px solid black;
     }
   }
   
@@ -60,6 +66,7 @@ h1 {
     background:#556D39;
     left: 50%;
     bottom: 0%;
+    border: 2px solid black;
     animation: sun-flwr__stem forwards 2s;
   }
   
