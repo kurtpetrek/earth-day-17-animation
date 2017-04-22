@@ -1,5 +1,3 @@
-# Basic SASS Template
+# Happy Earth Day!
 
-1. run npm install 
-2. run gulp
-3. get to work
+A css animation to celebrate Earth Day
