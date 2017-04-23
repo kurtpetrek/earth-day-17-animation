@@ -20,8 +20,6 @@
     getNum();
   }
   
-  console.log(positions);
-
   let more = setInterval(function() {
     let flwr = document.createElement('div');
     let dim = getRandomArbitrary(30, 80);
