@@ -12,9 +12,11 @@ body {
   border-bottom: 10vh #339545 solid;
   box-sizing: border-box;
   position: relative;
+  margin: 0px;
+  padding: 0px;
 }
 
-/* line 16, ../sass/style.scss */
+/* line 18, ../sass/style.scss */
 h1 {
   text-align: center;
   color: white;
@@ -44,7 +46,7 @@ h1 {
     top: 0vh;
   }
 }
-/* line 32, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 .sun-flwr {
   width: 80vmin;
   height: 80vmin;
@@ -54,7 +56,7 @@ h1 {
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
 }
-/* line 40, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 .sun-flwr__leaf--left, .sun-flwr__leaf--right {
   height: 20%;
   border-radius: 0% 50% 0% 50%;
@@ -67,7 +69,7 @@ h1 {
   -webkit-animation: sun-flwr__leaf forwards 1s .5s;
           animation: sun-flwr__leaf forwards 1s .5s;
 }
-/* line 52, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 .sun-flwr__leaf--right {
   top: 80%;
   left: 55%;
@@ -94,7 +96,7 @@ h1 {
     border: 2px solid black;
   }
 }
-/* line 70, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 .sun-flwr__stem {
   position: absolute;
   -webkit-transform: translate(-50%, 0%);
@@ -124,7 +126,7 @@ h1 {
     height: 60%;
   }
 }
-/* line 91, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .sun-flwr__center {
   border-radius: 50%;
   background-color: #3C1F03;
@@ -157,7 +159,7 @@ h1 {
     height: 25%;
   }
 }
-/* line 115, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 .sun-flwr__pedal--1, .sun-flwr__pedal--2, .sun-flwr__pedal--3, .sun-flwr__pedal--4, .sun-flwr__pedal--5, .sun-flwr__pedal--6, .sun-flwr__pedal--7, .sun-flwr__pedal--8, .sun-flwr__pedal--9, .sun-flwr__pedal--10, .sun-flwr__pedal--11, .sun-flwr__pedal--12 {
   border-radius: 50%;
   background: #F2FE00;
@@ -169,27 +171,27 @@ h1 {
   -webkit-animation: grow-pedal-back 1s 1.5s forwards;
           animation: grow-pedal-back 1s 1.5s forwards;
 }
-/* line 128, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 .sun-flwr__pedal--2 {
   -webkit-transform: translate(-50%, -50%) rotate(30deg);
           transform: translate(-50%, -50%) rotate(30deg);
 }
-/* line 133, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 .sun-flwr__pedal--3 {
   -webkit-transform: translate(-50%, -50%) rotate(60deg);
           transform: translate(-50%, -50%) rotate(60deg);
 }
-/* line 137, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 .sun-flwr__pedal--4 {
   -webkit-transform: translate(-50%, -50%) rotate(90deg);
           transform: translate(-50%, -50%) rotate(90deg);
 }
-/* line 141, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 .sun-flwr__pedal--5 {
   -webkit-transform: translate(-50%, -50%) rotate(120deg);
           transform: translate(-50%, -50%) rotate(120deg);
 }
-/* line 145, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .sun-flwr__pedal--6 {
   -webkit-transform: translate(-50%, -50%) rotate(150deg);
           transform: translate(-50%, -50%) rotate(150deg);
@@ -218,7 +220,7 @@ h1 {
     border: 2px solid black;
   }
 }
-/* line 163, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 .sun-flwr__pedal--7, .sun-flwr__pedal--8, .sun-flwr__pedal--9, .sun-flwr__pedal--10, .sun-flwr__pedal--11, .sun-flwr__pedal--12 {
   border-radius: 20% 50% 20% 50%;
   -webkit-transform: translate(-50%, -50%) rotate(15deg);
@@ -226,27 +228,27 @@ h1 {
   -webkit-animation: grow-pedal-front 1s 2s forwards;
           animation: grow-pedal-front 1s 2s forwards;
 }
-/* line 171, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 .sun-flwr__pedal--8 {
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
 }
-/* line 175, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 .sun-flwr__pedal--9 {
   -webkit-transform: translate(-50%, -50%) rotate(75deg);
           transform: translate(-50%, -50%) rotate(75deg);
 }
-/* line 179, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 .sun-flwr__pedal--10 {
   -webkit-transform: translate(-50%, -50%) rotate(105deg);
           transform: translate(-50%, -50%) rotate(105deg);
 }
-/* line 183, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .sun-flwr__pedal--11 {
   -webkit-transform: translate(-50%, -50%) rotate(135deg);
           transform: translate(-50%, -50%) rotate(135deg);
 }
-/* line 187, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 .sun-flwr__pedal--12 {
   -webkit-transform: translate(-50%, -50%) rotate(165deg);
           transform: translate(-50%, -50%) rotate(165deg);
