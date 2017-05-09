@@ -20,9 +20,31 @@ h1 {
   color: white;
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 40px;
+  position: absolute;
+  width: 100%;
+  top: 100vh;
+  -webkit-animation: move 1s 2.5s forwards;
+          animation: move 1s 2.5s forwards;
 }
 
-/* line 23, ../sass/style.scss */
+@-webkit-keyframes move {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 0vh;
+  }
+}
+
+@keyframes move {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 0vh;
+  }
+}
+/* line 32, ../sass/style.scss */
 .sun-flwr {
   width: 80vmin;
   height: 80vmin;
@@ -32,7 +54,7 @@ h1 {
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
 }
-/* line 31, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 .sun-flwr__leaf--left, .sun-flwr__leaf--right {
   height: 20%;
   border-radius: 0% 50% 0% 50%;
@@ -42,10 +64,10 @@ h1 {
   left: 45%;
   -webkit-transform: translate(-100%, -50%) rotate(-20deg);
           transform: translate(-100%, -50%) rotate(-20deg);
-  -webkit-animation: sun-flwr__leaf forwards 2s 1.5s;
-          animation: sun-flwr__leaf forwards 2s 1.5s;
+  -webkit-animation: sun-flwr__leaf forwards 1s .5s;
+          animation: sun-flwr__leaf forwards 1s .5s;
 }
-/* line 43, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 .sun-flwr__leaf--right {
   top: 80%;
   left: 55%;
@@ -72,7 +94,7 @@ h1 {
     border: 2px solid black;
   }
 }
-/* line 61, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .sun-flwr__stem {
   position: absolute;
   -webkit-transform: translate(-50%, 0%);
@@ -83,8 +105,8 @@ h1 {
   left: 50%;
   bottom: 0%;
   border: 2px solid black;
-  -webkit-animation: sun-flwr__stem forwards 2s;
-          animation: sun-flwr__stem forwards 2s;
+  -webkit-animation: sun-flwr__stem forwards 1s;
+          animation: sun-flwr__stem forwards 1s;
 }
 @-webkit-keyframes sun-flwr__stem {
   0% {
@@ -102,7 +124,7 @@ h1 {
     height: 60%;
   }
 }
-/* line 82, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 .sun-flwr__center {
   border-radius: 50%;
   background-color: #3C1F03;
@@ -112,8 +134,8 @@ h1 {
   left: 50%;
   top: 40%;
   z-index: 2;
-  -webkit-animation: sun-flwr__center 2s 1.5s forwards;
-          animation: sun-flwr__center 2s 1.5s forwards;
+  -webkit-animation: sun-flwr__center 1s 1s forwards;
+          animation: sun-flwr__center 1s 1s forwards;
 }
 @-webkit-keyframes sun-flwr__center {
   0% {
@@ -135,7 +157,7 @@ h1 {
     height: 25%;
   }
 }
-/* line 106, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .sun-flwr__pedal--1, .sun-flwr__pedal--2, .sun-flwr__pedal--3, .sun-flwr__pedal--4, .sun-flwr__pedal--5, .sun-flwr__pedal--6, .sun-flwr__pedal--7, .sun-flwr__pedal--8, .sun-flwr__pedal--9, .sun-flwr__pedal--10, .sun-flwr__pedal--11, .sun-flwr__pedal--12 {
   border-radius: 50%;
   background: #F2FE00;
@@ -144,30 +166,30 @@ h1 {
   position: absolute;
   left: 50%;
   top: 40%;
-  -webkit-animation: grow-pedal-back 2s 2.5s forwards;
-          animation: grow-pedal-back 2s 2.5s forwards;
+  -webkit-animation: grow-pedal-back 1s 1.5s forwards;
+          animation: grow-pedal-back 1s 1.5s forwards;
 }
-/* line 119, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 .sun-flwr__pedal--2 {
   -webkit-transform: translate(-50%, -50%) rotate(30deg);
           transform: translate(-50%, -50%) rotate(30deg);
 }
-/* line 124, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 .sun-flwr__pedal--3 {
   -webkit-transform: translate(-50%, -50%) rotate(60deg);
           transform: translate(-50%, -50%) rotate(60deg);
 }
-/* line 128, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 .sun-flwr__pedal--4 {
   -webkit-transform: translate(-50%, -50%) rotate(90deg);
           transform: translate(-50%, -50%) rotate(90deg);
 }
-/* line 132, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 .sun-flwr__pedal--5 {
   -webkit-transform: translate(-50%, -50%) rotate(120deg);
           transform: translate(-50%, -50%) rotate(120deg);
 }
-/* line 136, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 .sun-flwr__pedal--6 {
   -webkit-transform: translate(-50%, -50%) rotate(150deg);
           transform: translate(-50%, -50%) rotate(150deg);
@@ -196,35 +218,35 @@ h1 {
     border: 2px solid black;
   }
 }
-/* line 154, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 .sun-flwr__pedal--7, .sun-flwr__pedal--8, .sun-flwr__pedal--9, .sun-flwr__pedal--10, .sun-flwr__pedal--11, .sun-flwr__pedal--12 {
   border-radius: 20% 50% 20% 50%;
   -webkit-transform: translate(-50%, -50%) rotate(15deg);
           transform: translate(-50%, -50%) rotate(15deg);
-  -webkit-animation: grow-pedal-front 2s 3.5s forwards;
-          animation: grow-pedal-front 2s 3.5s forwards;
+  -webkit-animation: grow-pedal-front 1s 2s forwards;
+          animation: grow-pedal-front 1s 2s forwards;
 }
-/* line 162, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 .sun-flwr__pedal--8 {
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
 }
-/* line 166, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .sun-flwr__pedal--9 {
   -webkit-transform: translate(-50%, -50%) rotate(75deg);
           transform: translate(-50%, -50%) rotate(75deg);
 }
-/* line 170, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .sun-flwr__pedal--10 {
   -webkit-transform: translate(-50%, -50%) rotate(105deg);
           transform: translate(-50%, -50%) rotate(105deg);
 }
-/* line 174, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 .sun-flwr__pedal--11 {
   -webkit-transform: translate(-50%, -50%) rotate(135deg);
           transform: translate(-50%, -50%) rotate(135deg);
 }
-/* line 178, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .sun-flwr__pedal--12 {
   -webkit-transform: translate(-50%, -50%) rotate(165deg);
           transform: translate(-50%, -50%) rotate(165deg);

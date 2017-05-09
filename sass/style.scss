@@ -18,6 +18,15 @@ h1 {
   color: white;
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 40px;
+  position: absolute;
+  width: 100%;
+  top: 100vh;
+  animation: move 1s 2.5s forwards;
+}
+
+@keyframes move{
+  0% { top: 100vh;}
+  100% { top: 0vh;}
 }
 
 .sun-flwr {
@@ -37,7 +46,7 @@ h1 {
     top: 70%;
     left: 45%;
     transform: translate(-100%, -50%) rotate(-20deg);
-    animation: sun-flwr__leaf forwards 2s 1.5s;
+    animation: sun-flwr__leaf forwards 1s .5s;
   }
   
   &__leaf--right {
@@ -67,7 +76,7 @@ h1 {
     left: 50%;
     bottom: 0%;
     border: 2px solid black;
-    animation: sun-flwr__stem forwards 2s;
+    animation: sun-flwr__stem forwards 1s;
   }
   
   @keyframes sun-flwr__stem {
@@ -89,7 +98,7 @@ h1 {
     left: 50%;
     top: 40%;
     z-index: 2;
-    animation: sun-flwr__center 2s 1.5s forwards;
+    animation: sun-flwr__center 1s 1s forwards;
   }
   
   @keyframes sun-flwr__center {
@@ -113,7 +122,7 @@ h1 {
     left: 50%;
     top: 40%;
     // border: 2px solid black;
-    animation: grow-pedal-back 2s 2.5s forwards;
+    animation: grow-pedal-back 1s 1.5s forwards;
   }
   
   &__pedal--2 {
@@ -157,7 +166,7 @@ h1 {
     // width: 10%;
     border-radius: 20% 50% 20% 50%;
     transform: translate(-50%, -50%) rotate(15deg);
-    animation: grow-pedal-front 2s 3.5s forwards;
+    animation: grow-pedal-front 1s 2s forwards;
   }
   &__pedal--8 {
     @extend .sun-flwr__pedal--7;
